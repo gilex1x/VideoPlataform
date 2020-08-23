@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './components/Hello';
+import Apps  from './Containers/Apps'
 //Render recibe, el componente y donde lo va a poner
-ReactDOM.render(<Hello/>,document.getElementById("app"));
+ReactDOM.render(<Apps/>,document.getElementById("app"));
