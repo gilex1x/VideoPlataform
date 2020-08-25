@@ -39,7 +39,19 @@ module.exports={
             'css-loader',
             'sass-loader'
           ]
-        } 
+        },
+        {
+          test: /\.(png|gif|jpg)$/,
+          use:[
+            {
+              loader:'file-loader',
+              options:{
+                name: 'assets/[hash].[ext]'
+              }
+            }
+
+          ]
+        }
       
     ]
   },//Fin de los modulos
